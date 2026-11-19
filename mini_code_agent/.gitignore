@@ -1,0 +1,9 @@
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+.mini-code-agent/
+.env
+.env.*
+!.env.example
+dist/

@@ -1,0 +1,26 @@
+[project]
+name = "mini-code-agent"
+version = "0.1.0"
+description = "支持恢复工具调用会话的本地终端编程助手"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.10,<3",
+    "python-dotenv>=1,<2",
+]
+
+[project.scripts]
+mini-code-agent = "mini_agent.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11,<0.12"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple"
+default = true
+
+[tool.uv.build-backend]
+module-name = "mini_agent"
+module-root = ""
+
